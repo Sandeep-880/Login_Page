@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lgin</title>
+</head>
+<style>
+
+
+#login{
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+    height: 580px;
+    width: 500px;
+    margin-top: 50px;
+    margin-left: 400px;
+    background-image: linear-gradient(45deg,black,white,silver);
+
+}
+
+.login{
+    height: 800px;
+    width: 400px;
+    margin: 40px;
+} 
+
+h2{
+    padding-top: 15px;
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: bolder;
+    font-family :Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.inp{
+    height: 40px;
+    width: 350px;
+    margin-left: 30px;
+    border-color: cornflowerblue;
+    border-radius: 10px;
+}
+
+#inp_1{
+    width: 350px;
+    height: 50px;
+    margin-left: 35px;
+    background-color: rgb(80, 224, 111);
+    border: none;
+    border-radius: 20px;
+    color:white;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Verdana;
+}
+
+#inp_1:hover{
+    background-color: seagreen;
+}
+
+label{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:  monospace;
+}
+
+
+.inp_2{
+    width: 350px;
+    height: 50px;
+    margin-left: 35px;
+    background-color: rgb(194, 240, 204);
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: Verdana;
+}
+
+.inp_2:hover{
+    background-color: rgb(0, 141, 146);
+    color: whitesmoke;
+}
+
+a{
+    margin-left: 125px;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: blue;
+}
+
+/* ipad pro dimension */
+@media screen and (max-width: 1024px){   
+    #login{
+        width: 50%;
+        height: 50%;
+        margin-left: 180px;
+    }
+
+    .login{
+        width: 150%;
+        
+    }
+
+    h2{
+        font-size: 35px;
+    }
+
+    .label_1{
+        font-size: 25px;
+    }
+
+    #inp_1{
+        font-size: 25px;
+    }
+
+    .inp_2{
+        width: 50%;
+        font-size: 20px;
+    }
+
+    a{
+        font-size: 25px;
+    }
+
+    hr{
+        width:0px;
+    }
+}
+
+/* samsung galaxy S8+ Dimension */
+
+@media screen and (max-width :360px){
+
+    #login{
+    width: 95%;
+    height: 150%;
+    margin-left: 10px;  
+    }
+
+    .login{
+        margin-left: 5px;
+        height: 150%;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+    .label_1{
+        font-size: 15px;
+
+    }
+
+    .inp{
+    font-size: 25px;
+    width: 250px;
+    font-size: 18px;
+    }
+
+    #inp_1{
+        width: 250px;
+        font-size: 20px;
+    }
+
+    .inp_2{
+        width: 250px;
+        font-size: 15px;
+    }
+
+    a{
+        font-size: 15px;
+    }
+}
+</style>
+<body>
+    <div id="login">
+        <div class="login">
+            <h2>Login in</h2>
+            <br>
+            <label class="label_1">Email </label>
+            <br>
+            <input class="inp" type="email" >
+            <br><br><br>
+            <label class="label_1">Passwword </label>
+            <br>
+            <input class="inp" type="password" >
+            <br><br>
+            <input id="inp_1" type="submit">
+            <br><br>
+            <hr><br><br>
+            <input class="inp_2" type="submit" value="Continue with Facebook">
+            <br><br>
+            <input class="inp_2" type="submit"  value="Continue with Google">
+            <br><br>
+            <a href="#"> Forget Password ?</a>
+        </div>
+        
+    </div>
+</body>
+</html>
